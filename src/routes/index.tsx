@@ -3,7 +3,8 @@ import { Phone, Facebook, Flower2, Heart, Building2, MapPin, Mail, Clock } from 
 import heroBouquet from "@/assets/hero-bouquet.jpg";
 import aboutShop from "@/assets/about-shop.jpg";
 
-const PHONE = "tel:+359";
+const PHONE_DISPLAY = "089 855 3597";
+const PHONE = "tel:+359898553597";
 const FACEBOOK = "https://www.facebook.com/p/FloraGift-61573117297934/";
 const ADDRESS = 'ул. „Генерал Асен Николов" 19, София, 1324, България';
 const MAP_QUERY = encodeURIComponent(
@@ -310,7 +311,7 @@ function Contact() {
               </p>
               <ul className="mt-8 space-y-5 text-sm">
                 <InfoRow icon={MapPin} title="Адрес" body={ADDRESS} />
-                <InfoRow icon={Phone} title="Телефон" body="Обадете се за поръчка" href={PHONE} />
+                <InfoRow icon={Phone} title="Телефон" body={PHONE_DISPLAY} href={PHONE} />
                 <InfoRow icon={Clock} title="Работно време" body="Понеделник – Неделя" />
                 <InfoRow icon={Mail} title="Facebook" body="@FloraGift" href={FACEBOOK} />
               </ul>
