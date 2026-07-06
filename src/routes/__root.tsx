@@ -77,14 +77,12 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
-      { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { title: "FloraGift — Букети и цветни аранжировки в София" },
+      { name: "description", content: "FloraGift — магазин за цветя в София. Свежи букети, сватбена флористика и корпоративни аранжировки." },
+      { property: "og:title", content: "FloraGift — Букети и цветни аранжировки в София" },
+      { property: "og:description", content: "Свежи букети, сватбена флористика и корпоративни събития в София." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:site", content: "@Lovable" },
     ],
     links: [
       {
