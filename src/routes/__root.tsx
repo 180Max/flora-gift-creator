@@ -78,15 +78,11 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { title: "FloraGift — Букети и цветни аранжировки в София" },
-      { name: "description", content: "FloraGift — магазин за цветя в София. Уникални букети, сватбена флористика и корпоративни аранжировки със свежи рози, лилии и орхидеи." },
+      { name: "description", content: "FloraGift — магазин за цветя в София. Свежи букети, сватбена флористика и корпоративни аранжировки." },
       { property: "og:title", content: "FloraGift — Букети и цветни аранжировки в София" },
-      { property: "og:description", content: "FloraGift — магазин за цветя в София. Уникални букети, сватбена флористика и корпоративни аранжировки със свежи рози, лилии и орхидеи." },
+      { property: "og:description", content: "Свежи букети, сватбена флористика и корпоративни събития в София." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:title", content: "FloraGift — Букети и цветни аранжировки в София" },
-      { name: "twitter:description", content: "FloraGift — магазин за цветя в София. Уникални букети, сватбена флористика и корпоративни аранжировки със свежи рози, лилии и орхидеи." },
-      { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/d4a868a8-ca07-4c16-81d9-96f493183adc" },
-      { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/d4a868a8-ca07-4c16-81d9-96f493183adc" },
     ],
     links: [
       {
