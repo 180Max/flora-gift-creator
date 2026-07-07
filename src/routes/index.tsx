@@ -264,7 +264,48 @@ function Services() {
   );
 }
 
+function Gallery() {
+  return (
+    <section id="gallery" className="bg-surface py-24">
+      <div className="mx-auto max-w-7xl px-6">
+        <div className="mx-auto max-w-2xl text-center">
+          <span className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.25em] text-accent">
+            <Camera className="h-3.5 w-3.5" />
+            Галерия
+          </span>
+          <h2 className="mt-3 font-serif text-4xl text-primary-dark md:text-5xl">
+            Нашите изработени букети
+          </h2>
+          <p className="mt-4 text-muted-foreground">
+            Разгледайте селекция от букети и аранжировки, създадени с любов в ателието на
+            FloraGift.
+          </p>
+        </div>
+        <div className="mt-14 grid grid-cols-2 gap-4 md:grid-cols-3 md:gap-6 lg:grid-cols-5">
+          {GALLERY.map((item, i) => (
+            <figure
+              key={item.src}
+              className={`group relative overflow-hidden rounded-2xl ring-1 ring-border shadow-soft ${
+                i % 7 === 0 ? "md:col-span-2 md:row-span-2" : ""
+              }`}
+            >
+              <img
+                src={item.src}
+                alt={item.alt}
+                loading="lazy"
+                className="aspect-square h-full w-full object-cover transition duration-500 group-hover:scale-105"
+              />
+              <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-primary-dark/50 via-transparent to-transparent opacity-0 transition group-hover:opacity-100" />
+            </figure>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
 function About() {
+
   return (
     <section id="about" className="bg-surface py-24">
       <div className="mx-auto grid max-w-7xl items-center gap-16 px-6 md:grid-cols-2">
