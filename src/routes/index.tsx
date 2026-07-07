@@ -334,7 +334,7 @@ function About() {
             </p>
           </div>
           <div className="mt-8 flex flex-wrap gap-3">
-            {["Свежи цветя", "Ръчна изработка", "Доставка в София"].map((t) => (
+            {["Свежи цветя", "Ръчна изработка", "Индивидуален подход"].map((t) => (
               <span
                 key={t}
                 className="rounded-full border border-primary/20 bg-background px-4 py-2 text-xs font-medium text-primary"
