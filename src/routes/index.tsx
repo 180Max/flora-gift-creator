@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { Phone, Facebook, Flower2, Heart, Building2, MapPin, Mail, Clock, Camera } from "lucide-react";
+import { Phone, Facebook, Flower2, Heart, Building2, MapPin, Mail, Clock, Camera, Truck } from "lucide-react";
 import heroBouquet from "@/assets/hero-bouquet.jpg";
 import aboutShop from "@/assets/about-shop.jpg";
 import gallery1 from "@/assets/gallery-1.jpg.asset.json";
