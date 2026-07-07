@@ -93,7 +93,9 @@ function Nav() {
     { href: "#home", label: "Начало" },
     { href: "#about", label: "За нас" },
     { href: "#services", label: "Услуги" },
+    { href: "#gallery", label: "Галерия" },
     { href: "#contact", label: "Контакти" },
+
   ];
   return (
     <header className="sticky top-0 z-40 border-b border-border/60 bg-background/85 backdrop-blur">
