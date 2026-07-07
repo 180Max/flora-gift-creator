@@ -1,7 +1,31 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { Phone, Facebook, Flower2, Heart, Building2, MapPin, Mail, Clock } from "lucide-react";
+import { Phone, Facebook, Flower2, Heart, Building2, MapPin, Mail, Clock, Camera } from "lucide-react";
 import heroBouquet from "@/assets/hero-bouquet.jpg";
 import aboutShop from "@/assets/about-shop.jpg";
+import gallery1 from "@/assets/gallery-1.jpg.asset.json";
+import gallery2 from "@/assets/gallery-2.jpg.asset.json";
+import gallery3 from "@/assets/gallery-3.jpg.asset.json";
+import gallery4 from "@/assets/gallery-4.jpg.asset.json";
+import gallery5 from "@/assets/gallery-5.jpg.asset.json";
+import gallery6 from "@/assets/gallery-6.jpg.asset.json";
+import gallery7 from "@/assets/gallery-7.jpg.asset.json";
+import gallery8 from "@/assets/gallery-8.jpg.asset.json";
+import gallery9 from "@/assets/gallery-9.jpg.asset.json";
+import gallery10 from "@/assets/gallery-10.jpg.asset.json";
+
+const GALLERY = [
+  { src: gallery1.url, alt: "Букет с лилии и ириси до дама във FloraGift" },
+  { src: gallery2.url, alt: "Кошница с алстромерии и плюшено мече" },
+  { src: gallery3.url, alt: "Букет от бордо рози с плюшено мече" },
+  { src: gallery4.url, alt: "Сърце от червени рози с подаръчна кутия" },
+  { src: gallery5.url, alt: "Букет от тюркоазени сапунени рози" },
+  { src: gallery6.url, alt: "Златни сапунени рози с плюшено зайче" },
+  { src: gallery7.url, alt: "Кошница с червени рози и бонбони Ferrero" },
+  { src: gallery8.url, alt: "Розова кошница с гербери и подаръци" },
+  { src: gallery9.url, alt: "Вечна роза в стъклена рамка" },
+  { src: gallery10.url, alt: "Булчински бутилки с бели рози" },
+];
+
 
 const PHONE_DISPLAY = "089 855 3597";
 const PHONE = "tel:+359898553597";
@@ -46,8 +70,10 @@ function FloraGift() {
       <main>
         <Hero />
         <Services />
+        <Gallery />
         <About />
         <Contact />
+
       </main>
       <Footer />
       <a
@@ -67,7 +93,9 @@ function Nav() {
     { href: "#home", label: "Начало" },
     { href: "#about", label: "За нас" },
     { href: "#services", label: "Услуги" },
+    { href: "#gallery", label: "Галерия" },
     { href: "#contact", label: "Контакти" },
+
   ];
   return (
     <header className="sticky top-0 z-40 border-b border-border/60 bg-background/85 backdrop-blur">
@@ -236,7 +264,48 @@ function Services() {
   );
 }
 
+function Gallery() {
+  return (
+    <section id="gallery" className="bg-surface py-24">
+      <div className="mx-auto max-w-7xl px-6">
+        <div className="mx-auto max-w-2xl text-center">
+          <span className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.25em] text-accent">
+            <Camera className="h-3.5 w-3.5" />
+            Галерия
+          </span>
+          <h2 className="mt-3 font-serif text-4xl text-primary-dark md:text-5xl">
+            Нашите изработени букети
+          </h2>
+          <p className="mt-4 text-muted-foreground">
+            Разгледайте селекция от букети и аранжировки, създадени с любов в ателието на
+            FloraGift.
+          </p>
+        </div>
+        <div className="mt-14 grid grid-cols-2 gap-4 md:grid-cols-3 md:gap-6 lg:grid-cols-5">
+          {GALLERY.map((item, i) => (
+            <figure
+              key={item.src}
+              className={`group relative overflow-hidden rounded-2xl ring-1 ring-border shadow-soft ${
+                i % 7 === 0 ? "md:col-span-2 md:row-span-2" : ""
+              }`}
+            >
+              <img
+                src={item.src}
+                alt={item.alt}
+                loading="lazy"
+                className="aspect-square h-full w-full object-cover transition duration-500 group-hover:scale-105"
+              />
+              <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-primary-dark/50 via-transparent to-transparent opacity-0 transition group-hover:opacity-100" />
+            </figure>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
 function About() {
+
   return (
     <section id="about" className="bg-surface py-24">
       <div className="mx-auto grid max-w-7xl items-center gap-16 px-6 md:grid-cols-2">
