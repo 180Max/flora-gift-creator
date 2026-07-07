@@ -38,17 +38,17 @@ const MAP_QUERY = encodeURIComponent(
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "FloraGift — Букети и цветни аранжировки в София" },
+      { title: "Магазин за цветя FloraGift София | Букети и Аранжировки Люлин" },
       {
         name: "description",
         content:
-          "FloraGift — магазин за цветя в София. Уникални букети, сватбена флористика и корпоративни аранжировки със свежи рози, лилии и орхидеи.",
+          "Цветарски магазин FloraGift в София предлага свежи цветя, уникални букети за рождени дни, сватби и събития. Посетете ни на ул. Генерал Асен Николов 19!",
       },
-      { property: "og:title", content: "FloraGift — Букети и цветни аранжировки в София" },
+      { property: "og:title", content: "Магазин за цветя FloraGift София | Букети и Аранжировки Люлин" },
       {
         property: "og:description",
         content:
-          "Свежи букети, сватбена флористика и корпоративни събития. Поръчайте по телефона в София.",
+          "Цветарски магазин FloraGift в София предлага свежи цветя, уникални букети за рождени дни, сватби и събития. Посетете ни на ул. Генерал Асен Николов 19!",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
