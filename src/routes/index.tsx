@@ -70,6 +70,7 @@ function FloraGift() {
       <main>
         <Hero />
         <Services />
+        <Delivery />
         <Gallery />
         <About />
         <Contact />
