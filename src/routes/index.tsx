@@ -1,29 +1,19 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Phone, Facebook, Flower2, Heart, Building2, MapPin, Mail, Clock, Camera } from "lucide-react";
-import heroBouquet from "@/assets/hero-bouquet.jpg";
-import aboutShop from "@/assets/about-shop.jpg";
-import gallery1 from "@/assets/gallery-1.jpg.asset.json";
-import gallery2 from "@/assets/gallery-2.jpg.asset.json";
-import gallery3 from "@/assets/gallery-3.jpg.asset.json";
-import gallery4 from "@/assets/gallery-4.jpg.asset.json";
-import gallery5 from "@/assets/gallery-5.jpg.asset.json";
-import gallery6 from "@/assets/gallery-6.jpg.asset.json";
-import gallery7 from "@/assets/gallery-7.jpg.asset.json";
-import gallery8 from "@/assets/gallery-8.jpg.asset.json";
-import gallery9 from "@/assets/gallery-9.jpg.asset.json";
-import gallery10 from "@/assets/gallery-10.jpg.asset.json";
+const heroBouquet = "/images/hero-bouquet.jpg";
+const aboutShop = "/images/about-shop.jpg";
 
 const GALLERY = [
-  { src: gallery1.url, alt: "Букет с лилии и ириси до дама във FloraGift" },
-  { src: gallery2.url, alt: "Кошница с алстромерии и плюшено мече" },
-  { src: gallery3.url, alt: "Букет от бордо рози с плюшено мече" },
-  { src: gallery4.url, alt: "Сърце от червени рози с подаръчна кутия" },
-  { src: gallery5.url, alt: "Букет от тюркоазени сапунени рози" },
-  { src: gallery6.url, alt: "Златни сапунени рози с плюшено зайче" },
-  { src: gallery7.url, alt: "Кошница с червени рози и бонбони Ferrero" },
-  { src: gallery8.url, alt: "Розова кошница с гербери и подаръци" },
-  { src: gallery9.url, alt: "Вечна роза в стъклена рамка" },
-  { src: gallery10.url, alt: "Булчински бутилки с бели рози" },
+  { src: "/images/gallery-1.jpg", alt: "Букет с лилии и ириси до дама във FloraGift" },
+  { src: "/images/gallery-2.jpg", alt: "Кошница с алстромерии и плюшено мече" },
+  { src: "/images/gallery-3.jpg", alt: "Букет от бордо рози с плюшено мече" },
+  { src: "/images/gallery-4.jpg", alt: "Сърце от червени рози с подаръчна кутия" },
+  { src: "/images/gallery-5.jpg", alt: "Букет от тюркоазени сапунени рози" },
+  { src: "/images/gallery-6.jpg", alt: "Златни сапунени рози с плюшено зайче" },
+  { src: "/images/gallery-7.jpg", alt: "Кошница с червени рози и бонбони Ferrero" },
+  { src: "/images/gallery-8.jpg", alt: "Розова кошница с гербери и подаръци" },
+  { src: "/images/gallery-9.jpg", alt: "Вечна роза в стъклена рамка" },
+  { src: "/images/gallery-10.jpg", alt: "Булчински бутилки с бели рози" },
 ];
 
 
