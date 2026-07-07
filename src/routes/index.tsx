@@ -265,6 +265,42 @@ function Services() {
   );
 }
 
+function Delivery() {
+  return (
+    <section className="bg-background py-16">
+      <div className="mx-auto max-w-5xl px-6">
+        <div className="relative overflow-hidden rounded-3xl bg-primary p-8 text-primary-foreground shadow-soft md:p-12">
+          <div className="pointer-events-none absolute -right-16 -top-16 h-56 w-56 rounded-full bg-accent/20 blur-3xl" />
+          <div className="relative flex flex-col items-start gap-6 md:flex-row md:items-center">
+            <div className="flex h-16 w-16 shrink-0 items-center justify-center rounded-2xl bg-accent text-accent-foreground shadow-glow">
+              <Truck className="h-7 w-7" />
+            </div>
+            <div className="flex-1">
+              <span className="text-xs font-semibold uppercase tracking-[0.25em] text-accent">
+                Доставки
+              </span>
+              <h2 className="mt-2 font-serif text-3xl md:text-4xl">
+                Бърза доставка в Люлин и цяла София
+              </h2>
+              <p className="mt-3 text-sm leading-relaxed text-primary-foreground/85 md:text-base">
+                Извършваме бързи доставки на цветя и букети в района на Люлин и цяла София!
+                Направете изненада на любим човек директно до дома или офиса.
+              </p>
+            </div>
+            <a
+              href={PHONE}
+              className="inline-flex items-center gap-2 rounded-full bg-accent px-6 py-3.5 text-sm font-semibold text-accent-foreground shadow-glow transition hover:brightness-110"
+            >
+              <Phone className="h-4 w-4" />
+              Обади се сега
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
 function Gallery() {
   return (
     <section id="gallery" className="bg-surface py-24">
